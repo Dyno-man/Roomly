@@ -1,4 +1,4 @@
-import { CreateChore } from "@/app/ui/chores/CreateChore"
+import { ViewChore } from "@/app/ui/chores/ViewChore"
 
 const choreList = [
     {
@@ -33,7 +33,7 @@ export default function Page(){
             <p>Chore List Page</p>
             {choreList.map((chore) => {
                 return (
-                    <CreateChore key={chore.id} chore={chore} />
+                    <ViewChore key={chore.id} chore={chore} />
                 )
             })}
         </main>
