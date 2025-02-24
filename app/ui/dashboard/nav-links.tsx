@@ -9,8 +9,12 @@ import  clsx  from 'clsx';
 const links = [
   { name: 'Home', href: '/dashboard' },
   {
-    name: 'Chores',
-    href: '/dashboard/chores',
+    name: 'View Chores',
+    href: '/dashboard/view_chores',
+  },
+  {
+    name: 'Create Chores',
+    href: '/dashboard/create_chores'
   },
   { name: 'Roomates', href: '/dashboard/roomates'},
 ];

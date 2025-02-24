@@ -4,10 +4,15 @@ interface Users {
     lastName: string,
 }
 
-export default function Page() {
+export default async function Page() {
+
+    const data = await fetch('http://localhost:3000/add_user')
+    const user = await data
+
+    console.log(data)
+
     return(
-        <main>
-            <p>Roomates Page</p>
-        </main>
+       <div>
+       </div>
     )
 }
